@@ -1,0 +1,34 @@
+[cmd1]
+echo hello goodbye
+grep land testinput.txt
+
+[cmd2]
+echo testData123 > test.out
+cat < test.out
+
+[cmd3]
+grep flower < testinput.txt > test2.out
+cat test2.out | cat
+
+[cmd4]
+grep me < testinput.txt | wc > test3.out
+cat test3.out
+
+[cmd5]
+echo hello > test4.out | find . -maxdepth 1 -name test4.out | xargs grep hello | wc
+
+[cmd6]
+echo  hello>test5.out
+cat test5.out
+
+[cmd7]
+grep flower < testinput0.txt
+
+[cmd8]
+按下 Ctrl + C 观察是否终止
+
+[cmd9]
+演示命令的后台运行
+
+[cmd10]
+利用上下方向键进行选择
